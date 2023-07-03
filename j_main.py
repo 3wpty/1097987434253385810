@@ -1,6 +1,5 @@
 """
-DISCORD.PY 2.0 BOT ONLY FOR ONE GUILD
-✅❌
+DISCORD.PY 2.0 BOT ONLY FOR parad0x
 cd /D D:\\sus\\py\\jett
 """
 # ==============================================================================
@@ -131,7 +130,7 @@ async def cmd_mute(interaction: discord.Interaction,
     emb.set_footer(text=f"Инициатор: {interaction.user}", icon_url=interaction.user.display_avatar)  # who called it
 
     await interaction.response.send_message(embed=emb, ephemeral=True)  # sending message if ok
-    message = await interaction.guild.get_channel(1097987607838859416).send(embed=emb)  # sending embed to log channel
+    message = await interaction.guild.get_channel(1098697565593145344).send(embed=emb)  # sending embed to log channel
 
 
 
@@ -156,7 +155,7 @@ async def cmd_unmute(interaction: discord.Interaction,
     emb.set_footer(text=f"Инициатор: {interaction.user}", icon_url=interaction.user.display_avatar)  # who called it
 
     await interaction.response.send_message(embed=emb, ephemeral=True)  # sending message if ok
-    message = await interaction.guild.get_channel(1097987607838859416).send(embed=emb)  # sending embed to log channel
+    message = await interaction.guild.get_channel(1098697565593145344).send(embed=emb)  # sending embed to log channel
 
 
 
@@ -192,7 +191,7 @@ async def cmd_warn(interaction: discord.Interaction,
         emb.set_footer(text=f"Инициатор: {interaction.user}", icon_url=interaction.user.display_avatar)  # who called it
 
     await interaction.response.send_message(embed=emb, ephemeral=True)  # sending message if ok
-    message = await interaction.guild.get_channel(1097987607838859416).send(embed=emb)  # sending embed to log channel
+    message = await interaction.guild.get_channel(1098697565593145344).send(embed=emb)  # sending embed to log channel
 
 
 
@@ -223,14 +222,14 @@ async def cmd_add_custom_role(interaction: discord.Interaction,
         if role_already_exist:  # if user already have custom role
             role_id = j_mechanics.role_id_mecha(interaction.user.id)  # finding id of role from json file
             role = interaction.guild.get_role(role_id)  # getting role object
-            role = await role.edit(name=name, color=int(f"0x{color}", 16), position=(len(interaction.guild.roles)-10))  # editing role
+            role = await role.edit(name=name, color=int(f"0x{color}", 16), position=(len(interaction.guild.roles)-5))  # editing role
             await interaction.user.add_roles(role)  # give role to the user
 
 
         else:
 
             role = await interaction.guild.create_role()  # creating role
-            role = await role.edit(name=name, color=int(f"0x{color}", 16), position=(len(interaction.guild.roles)-10))  # editing role
+            role = await role.edit(name=name, color=int(f"0x{color}", 16), position=(len(interaction.guild.roles)-5))  # editing role
             j_mechanics.role_id_mecha(interaction.user.id, role.id)  # save role id to json file
             await interaction.user.add_roles(role)  # give role to the user
 
@@ -241,7 +240,7 @@ async def cmd_add_custom_role(interaction: discord.Interaction,
     emb.set_footer(text=f"Инициатор: {interaction.user}", icon_url=interaction.user.display_avatar)  # who called it
 
     await interaction.response.send_message(embed=emb)  # sending embed
-    message = await interaction.guild.get_channel(1097987607838859416).send(embed=emb)  # sending embed to log channel
+    message = await interaction.guild.get_channel(1098697565593145344).send(embed=emb)  # sending embed to log channel
 
 
 
@@ -286,7 +285,7 @@ async def cmd_remove_custom_role(interaction: discord.Interaction,
     emb.set_footer(text=f"Инициатор: {interaction.user}", icon_url=interaction.user.display_avatar)  # who called it
 
     await interaction.response.send_message(embed=emb)  # sending embed
-    message = await interaction.guild.get_channel(1097987607838859416).send(embed=emb)  # sending embed to log channel
+    message = await interaction.guild.get_channel(1098697565593145344).send(embed=emb)  # sending embed to log channel
 
 
 
