@@ -1,6 +1,8 @@
 """
 DISCORD.PY 2.0 BOT ONLY FOR parad0x
 cd /D D:\\sus\\py\\jett
+
+python D:\\sus\\py\\jett\\j_main.py
 """
 # ==============================================================================
 
