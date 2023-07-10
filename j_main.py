@@ -322,15 +322,7 @@ async def cmd_report_message(interaction: discord.Interaction,
 #                 RUN
 #                 RUN
 #                 RUN
-#                 RUN
-#                 RUN
 client.run(j_token.mama_TOKEN())
 #                 RUN
 #                 RUN
 #                 RUN
-#                 RUN
-#                 RUN
-
-
-
-# mama privet mama
